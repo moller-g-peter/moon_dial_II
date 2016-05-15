@@ -227,6 +227,16 @@
   left: 66px;
   /*transform: rotate(5deg);*/
 }
+/*.shootingStar{
+  top: 379px;
+  left: 420px;
+  transform: rotate(70deg);
+}*/
+.shootingStar{
+  top: 437px;
+  left: 545px;
+  transform: rotate(70deg);
+}
 .cloud_big{
   top: 75px;
   left: -150px;

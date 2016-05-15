@@ -115,6 +115,12 @@ function star9_2(){
     star9_1();
   });
 }
+function shootingStar(){
+  $(".shootingStar").animate({left: '-100', top: '140'}, 1000, 'linear', function(){
+    $('.shootingStar').css({left:545, top:437}).delay(5000);
+    shootingStar();
+  });
+}
 function sunY_high(){
   $('.sunY_low').fadeOut(2000);
   $('.sunY_high').fadeIn(2000, function(){
@@ -122,12 +128,11 @@ function sunY_high(){
   });
 }
 function sunY_low(){
-    $('.sunY_high').fadeOut(2000);
+  $('.sunY_high').fadeOut(2000);
   $('.sunY_low').fadeIn(2000, function(){
     sunY_high();
   });
 }
-
 function animatedCloudBig(){
   $(".cloud_big").animate({left: '500px'}, 27000, 'linear', function(){
     $('.cloud_big').css({left:-200});
@@ -202,5 +207,6 @@ animatedCloudBig();
 animatedCloudSmall();
 animatedCloudMedium();
 animatedCloudMicro();
+shootingStar();
 
 
