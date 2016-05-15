@@ -5,7 +5,7 @@
   /*margin: 20px auto 0 auto;*/
 }
 #clock {
-  /*position: absolute;*/
+  position: absolute;
   width: 600px;
   height: 600px;
   /*background: url(../img/clockface.jpg);*/
@@ -15,6 +15,7 @@
   padding: 0;
   margin: 0;
   z-index: 10;
+  overflow: hidden;
 }
 #sec, #min {
   position: absolute;
@@ -226,7 +227,30 @@
   left: 66px;
   /*transform: rotate(5deg);*/
 }
-
+.cloud_big{
+  top: 75px;
+  left: -150px;
+  z-index: 3;
+  /*transform: rotate(5deg);*/
+}
+.cloud_medium{
+  top: 53px;
+  left: 200px;
+  z-index: 3;
+  /*transform: rotate(5deg);*/
+}
+.cloud_small{
+  top: 70px;
+  left: 0px;
+  z-index: 3;
+  /*transform: rotate(5deg);*/
+}
+.cloud_micro{
+  top: 100px;
+  left: 10px;
+  z-index: 3;
+  /*transform: rotate(5deg);*/
+}
 .moon{
   top: 390px;
   left: 246px;
