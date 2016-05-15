@@ -1,0 +1,343 @@
+
+/* WHOLE CLOCK WRAPPER */
+#clockWrapper{
+  position: relative;
+  /*margin: 20px auto 0 auto;*/
+}
+#clock {
+  /*position: absolute;*/
+  width: 600px;
+  height: 600px;
+  /*background: url(../img/clockface.jpg);*/
+  background: url(../img/clockface_shade.png);
+  list-style: none;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+}
+#sec, #min {
+  position: absolute;
+  width: 30px;
+  height: 600px;
+  top: 0;
+  left: 285px;
+}
+#sec {
+  background: url(../img/sechand_gold.png);
+  z-index: 3;
+} 
+#min {
+  background: url(../img/minhand_gold.png);
+  z-index: 2;
+} 
+#hour {
+  position: absolute;
+  background: url(../img/hourhand_gold.png);
+  width: 50px;
+  height: 600px;
+  top: 0;
+  left: 275px;
+  z-index: 1;
+}
+#romanNumbers > * {
+  position: absolute;
+  list-style: none;
+  z-index: 11;
+}
+#I{
+  top: 82px;
+  left: 415px;
+  transform: rotate(30deg);
+}
+#II{
+  top: 170px;
+  left: 497px;
+  transform: rotate(60deg);
+}
+#III{
+  top: 289px;
+  left: 523px;
+  transform: rotate(90deg);
+}
+#IV{
+  top: 410px;
+  left: 492px;
+  transform: rotate(120deg);
+}
+#V{
+  top: 496px;
+  left: 411px;
+  transform: rotate(155deg);
+}
+#VI{
+  top: 529px;
+  left: 287px;
+  transform: rotate(180deg);
+}
+#VII{
+  top: 498px;
+  left: 161px;
+  transform: rotate(-150deg);
+}
+#VIII{
+  top: 413px;
+  left: 69px;
+  transform: rotate(-120deg);
+}
+#IX{
+  top: 291px;
+  left: 43px;
+  transform: rotate(-90deg);
+}
+#X{
+  top: 172px;
+  left: 79px;
+  transform: rotate(-60deg);
+}
+#XI{
+  top: 83px;
+  left: 162px;
+  transform: rotate(-30deg);
+}
+#XII{
+  top: 50px;
+  left: 278px;
+}
+
+
+
+
+
+
+
+/* MOON DIAL DISC */
+#gradientDisc{
+  position: absolute;
+  top: 58px;
+  left: 58px;
+  width: 484px;
+  height: 484px;
+  /*margin: 20px auto 0 auto;*/
+  background: url(../img/gradient_circle_celest.png);
+  background-repeat: no-repeat;
+}
+
+#gradientDisc * {
+  position: absolute;
+}
+.sunY_low{
+  top: 45px;
+  left: 208px;
+}
+.sunY_high{
+  top: 45px;
+  left: 208px;
+  transform: rotate(25deg);
+  z-index: 2;
+}
+.star1_1{
+  top: 316px;
+  left: 107px;
+  /*z-index: 2;*/
+}  
+.star1_2{
+  top: 317px;
+  left: 106px;
+  transform: rotate(-4deg);
+}
+.star2_1{
+  top: 428px;
+  left: 166px;
+  /*z-index: 2;*/
+}  
+.star2_2{
+  top: 427px;
+  left: 167px;
+  /*transform: rotate(5deg);*/
+}
+.star3_1{
+  top: 328px;
+  left: 316px;
+  /*z-index: 2;*/
+}  
+.star3_2{
+  top: 328px;
+  left: 316px;
+  transform: rotate(5deg);
+}
+.star4_1{
+  top: 378px;
+  left: 206px;
+  /*z-index: 2;*/
+}  
+.star4_2{
+  top: 378px;
+  left: 207px;
+  /*transform: rotate(5deg);*/
+}
+.star5_1{
+  top: 378px;
+  left: 106px;
+  /*z-index: 2;*/
+}  
+.star5_2{
+  top: 378px;
+  left: 107px;
+  /*transform: rotate(5deg);*/
+}
+.star6_1{
+  top: 408px;
+  left: 356px;
+  /*z-index: 2;*/
+}  
+.star6_2{
+  top: 408px;
+  left: 356px;
+  /*transform: rotate(5deg);*/
+}
+.star7_1{
+  top: 308px;
+  left: 386px;
+  /*z-index: 2;*/
+}  
+.star7_2{
+  top: 308px;
+  left: 386px;
+  /*transform: rotate(5deg);*/
+}
+.star8_1{
+  top: 353px;
+  left: 406px;
+  /*z-index: 2;*/
+}  
+.star8_2{
+  top: 355px;
+  left: 156px;
+  /*transform: rotate(5deg);*/
+}
+.star9_1{
+  top: 343px;
+  left: 66px;
+  /*z-index: 2;*/
+}  
+.star9_2{
+  top: 343px;
+  left: 66px;
+  /*transform: rotate(5deg);*/
+}
+
+.moon{
+  top: 390px;
+  left: 246px;
+  -ms-transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+  transform: rotate(-60deg);
+  /*z-index: 1;*/
+}
+.fallingStar{
+  top: 282px;
+  left: 226px;
+  -ms-transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+  transform: rotate(-180deg);
+}
+
+
+
+
+
+
+
+
+/*
+.forest{
+  position: relative;
+}
+
+.T1{
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-color: pink;
+}
+.T1 * {
+  position: absolute;
+}*/
+
+/*.topBranch{ 
+  left: 240px;
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent; 
+  border-right: 16px solid transparent;
+  border-bottom: 32px solid red;
+}
+.middleBranch{
+  left: 225px;
+  top: 15px;
+  width: 0;
+  height: 0;
+  border-left: 31px solid transparent;
+  border-right: 31px solid transparent;
+  border-bottom: 50px solid red;
+}
+.bottomBranch{
+  left: 211px;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-left: 44px solid transparent;
+  border-right: 44px solid transparent;
+  border-bottom: 89px solid red;
+}
+.treeFoot{
+  top: 80px;
+  left: 250px;
+  width: 10px;
+  height: 50px;
+  background-color: red;
+}*/
+
+
+/*.starBox{
+  position: relative;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
