@@ -117,7 +117,7 @@ function star9_2(){
 }
 function shootingStar(){
   $(".shootingStar").animate({left: '-100', top: '140'}, 1000, 'linear', function(){
-    $('.shootingStar').css({left:545, top:437}).delay(5000);
+    $('.shootingStar').css({left:545, top:437}).delay(30000);
     shootingStar();
   });
 }
@@ -192,6 +192,34 @@ setInterval( function() {
 }, 1000 );
  
 // -----------------------------------------------
+
+
+// window.requestAnimationFrame = window.requestAnimationFrame
+//                                || window.mozRequestAnimationFrame
+//                                || window.webkitRequestAnimationFrame
+//                                || window.msRequestAnimationFrame
+//                                || function(f){return setTimeout(f, 1000/60)};
+
+// function updateclock(){
+//  // var curdate = new Date();
+//  var hour_as_degree = ( new Date().getHours() + new Date().getMinutes()/60 ) / 12 * 360;
+//  var minute_as_degree = ( new Date().getMinutes() + new Date().getSeconds()/60 ) / 60 * 360;
+//  var second_as_degree = ( new Date().getSeconds() + new Date().getMilliseconds()/1000 ) /60 * 360;
+//  $('#hour').css({transform: 'rotate(' + hour_as_degree + 'deg)' });
+//  $('#min').css({transform: 'rotate(' + minute_as_degree + 'deg)' });
+//  $('#gradientDisc').css({transform: 'rotate(' + hour_as_degree + 'deg)' });
+//  $('#sec').css({transform: 'rotate(' + second_as_degree + 'deg)' });
+//  // console.log(second_as_degree);
+//  requestAnimationFrame(updateclock); //
+// }
+
+// requestAnimationFrame(updateclock);
+
+
+
+
+
+
 
 
 star1_1();

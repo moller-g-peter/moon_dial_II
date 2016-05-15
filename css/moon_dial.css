@@ -1,4 +1,6 @@
-
+body{
+  margin: 0;
+}
 /* WHOLE CLOCK WRAPPER */
 #clockWrapper{
   position: relative;
@@ -6,10 +8,10 @@
 }
 #clock {
   position: absolute;
-  width: 600px;
-  height: 600px;
+  width: 1200px;
+  height: 1200px;
   /*background: url(../img/clockface.jpg);*/
-  background: url(../img/clockface_shade.png);
+  background: url(../img/clockface_shade_wall.png);
   list-style: none;
   background-repeat: no-repeat;
   padding: 0;
@@ -116,7 +118,7 @@
 #gradientDisc{
   position: absolute;
   top: 58px;
-  left: 58px;
+  left: 56px;
   width: 484px;
   height: 484px;
   /*margin: 20px auto 0 auto;*/
