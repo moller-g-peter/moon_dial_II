@@ -7,7 +7,7 @@ body{
   /*margin: 20px auto 0 auto;*/
 }
 #clock {
-  /*position: absolute;*/
+  position: absolute;
   width: 1200px;
   height: 1200px;
   /*background: url(../img/clockface.jpg);*/
@@ -241,8 +241,9 @@ body{
 }*/
 .shootingStar{
   top: 437px;
-  left: 545px;
-  transform: rotate(70deg);
+  /*left: 545px;*/
+  left: 467px;
+  transform: rotate(73deg);
 }
 .cloud_big{
   top: 75px;

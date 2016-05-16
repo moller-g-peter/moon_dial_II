@@ -117,7 +117,7 @@ function star9_2(){
 }
 function shootingStar(){
   $(".shootingStar").animate({left: '-100', top: '140'}, 1000, 'linear', function(){
-    $('.shootingStar').css({left:545, top:437}).delay(30000);
+    $('.shootingStar').css({left:467, top:437}).delay(30000);
     shootingStar();
   });
 }
