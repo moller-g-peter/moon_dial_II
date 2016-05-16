@@ -115,12 +115,6 @@ function star9_2(){
     star9_1();
   });
 }
-function shootingStar(){
-  $(".shootingStar").animate({left: '-100', top: '140'}, 1000, 'linear', function(){
-    $('.shootingStar').css({left:467, top:437}).delay(30000);
-    shootingStar();
-  });
-}
 function sunY_high(){
   $('.sunY_low').fadeOut(2000);
   $('.sunY_high').fadeIn(2000, function(){
@@ -158,7 +152,6 @@ function animatedCloudMicro(){
   });
 }
 
-
  
 setInterval( function() {
   var seconds = new Date().getSeconds();
@@ -166,7 +159,7 @@ setInterval( function() {
   var srotate = "rotate(" + sdegree + "deg)";
   // console.log("srotate :", srotate);
   $("#sec").css({ "transform": srotate });
-    
+
 }, 1000 );
 // -----------------------------------------------
 
@@ -185,11 +178,36 @@ setInterval( function() {
   var mins = new Date().getMinutes();
   var mdegree = mins * 6;
   var mrotate = "rotate(" + mdegree + "deg)";
-
+  var number = mrotate.replace(/[^0-9]/g, '');
+  
   $("#min").css({ "transform" : mrotate });
   $("#gradientDisc").css({ "transform": mrotate });
-    
+  console.log( number);
+
 }, 1000 );
+// -----------------------------------------------
+
+setInterval( function() {
+  var mins = new Date().getMinutes();
+  var mdegree = mins * 6;
+  var mrotate = "rotate(" + mdegree + "deg)";
+   // remove string and keep integer
+  var number = mrotate.replace(/[^0-9]/g, '');
+
+  if (number >= 120 && number <= 270){
+    $(".shootingStar").animate({left: '-100', top: '140'}, 700, 'linear', function(){
+      $('.shootingStar').css({left:467, top:437});
+    });
+  }
+}, 20000 );
+
+// function shootingStar(){
+//   $('.shootingStar').css({left:467, top:437}).delay(30000, function(){
+//     $(".shootingStar").animate({left: '-100', top: '140'}, 1000, 'linear');
+//     // shootingStar();
+//   });
+// // console.log('shoot!');
+// }
  
 // -----------------------------------------------
 
@@ -235,6 +253,6 @@ animatedCloudBig();
 animatedCloudSmall();
 animatedCloudMedium();
 animatedCloudMicro();
-shootingStar();
+// shootingStar();
 
 
