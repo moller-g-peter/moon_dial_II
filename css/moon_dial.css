@@ -11,7 +11,7 @@ body{
   width: 1200px;
   height: 1200px;
   /*background: url(../img/clockface.jpg);*/
-  background: url(../img/clockface_shade_wall.png);
+  background: url(../img/Golden_clock_two.png);
   list-style: none;
   background-repeat: no-repeat;
   padding: 0;
@@ -27,21 +27,21 @@ body{
   background: url(../img/sechand_gold.png);
   width: 30px;
   top: 150px;
-  left: 444px;
+  left: 434px;
   z-index: 3;
 } 
 #min {
   background: url(../img/minhand_gold.png);
   width: 30px;
   top: 150px;
-  left: 444px;
+  left: 434px;
   z-index: 2;
 } 
 #hour {
   background: url(../img/hourhand_gold.png);
   width: 50px;
-  top: 150px;
-  left: 434px;
+  top: 151px;
+  left: 424px;
   z-index: 1;
 }
 #romanNumbers > * {
@@ -51,7 +51,7 @@ body{
 #romanNumbers{
   position: absolute;
   top: 149px;
-  left: 161px;
+  left: 149px;
 }
 #I{
   top: 82px;
@@ -122,8 +122,8 @@ body{
 /* MOON DIAL DISC */
 #gradientDisc{
   position: absolute;
-  top: 209px;
-  left: 218px;
+  top: 207px;
+  left: 204px;
   width: 484px;
   height: 484px;
   /*margin: 20px auto 0 auto;*/
