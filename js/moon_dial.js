@@ -179,7 +179,7 @@ setInterval( function() {
   var mdegree = mins * 6;
   var mrotate = "rotate(" + mdegree + "deg)";
   var number = mrotate.replace(/[^0-9]/g, '');
-  
+
   $("#min").css({ "transform" : mrotate });
   $("#gradientDisc").css({ "transform": mrotate });
   console.log( number);
@@ -191,7 +191,7 @@ setInterval( function() {
   var mins = new Date().getMinutes();
   var mdegree = mins * 6;
   var mrotate = "rotate(" + mdegree + "deg)";
-   // remove string and keep integer
+   // remove string from 'mrotate' and keep integer
   var number = mrotate.replace(/[^0-9]/g, '');
 
   if (number >= 120 && number <= 270){
