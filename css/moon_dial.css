@@ -1,10 +1,18 @@
 body{
   margin: 0;
 }
-/* WHOLE CLOCK WRAPPER */
+
+
+
+/* ---------- WHOLE CLOCK WRAPPER ---------- */
+
+
+
+
 #clockWrapper{
   position: relative;
   /*margin: 20px auto 0 auto;*/
+  z-index: 1;
 }
 #clock {
   position: absolute;
@@ -16,8 +24,8 @@ body{
   background-repeat: no-repeat;
   padding: 0;
   margin: 0;
-  z-index: 10;
-  overflow: hidden;
+  /*z-index: 1;*/
+  /*overflow: hidden;*/
 }
 #sec, #min, #hour {
   position: absolute;
@@ -28,21 +36,21 @@ body{
   width: 30px;
   top: 150px;
   left: 434px;
-  z-index: 3;
+  z-index: 20;
 } 
 #min {
   background: url(../img/minhand_gold.png);
   width: 30px;
   top: 150px;
   left: 434px;
-  z-index: 2;
+  z-index: 19;
 } 
 #hour {
   background: url(../img/hourhand_gold.png);
   width: 50px;
   top: 151px;
   left: 424px;
-  z-index: 1;
+  z-index: 18;
 }
 #romanNumbers > * {
   position: absolute;
@@ -115,11 +123,11 @@ body{
 
 
 
+/* ---------- MOON DIAL DISC ---------- */
 
 
 
 
-/* MOON DIAL DISC */
 #gradientDisc{
   position: absolute;
   top: 207px;
@@ -129,8 +137,8 @@ body{
   /*margin: 20px auto 0 auto;*/
   background: url(../img/gradient_circle_celest.png);
   background-repeat: no-repeat;
+  z-index: -1;
 }
-
 #gradientDisc * {
   position: absolute;
 }
@@ -147,7 +155,6 @@ body{
 .star1_1{
   top: 316px;
   left: 107px;
-  /*z-index: 2;*/
 }  
 .star1_2{
   top: 317px;
@@ -157,17 +164,14 @@ body{
 .star2_1{
   top: 428px;
   left: 166px;
-  /*z-index: 2;*/
 }  
 .star2_2{
   top: 427px;
   left: 167px;
-  /*transform: rotate(5deg);*/
 }
 .star3_1{
   top: 328px;
   left: 316px;
-  /*z-index: 2;*/
 }  
 .star3_2{
   top: 328px;
@@ -177,62 +181,50 @@ body{
 .star4_1{
   top: 378px;
   left: 206px;
-  /*z-index: 2;*/
 }  
 .star4_2{
   top: 378px;
   left: 207px;
-  /*transform: rotate(5deg);*/
 }
 .star5_1{
   top: 378px;
   left: 106px;
-  /*z-index: 2;*/
 }  
 .star5_2{
   top: 378px;
   left: 107px;
-  /*transform: rotate(5deg);*/
 }
 .star6_1{
   top: 408px;
   left: 356px;
-  /*z-index: 2;*/
 }  
 .star6_2{
   top: 408px;
   left: 356px;
-  /*transform: rotate(5deg);*/
 }
 .star7_1{
   top: 308px;
   left: 386px;
-  /*z-index: 2;*/
 }  
 .star7_2{
   top: 308px;
   left: 386px;
-  /*transform: rotate(5deg);*/
 }
 .star8_1{
   top: 353px;
   left: 406px;
-  /*z-index: 2;*/
 }  
 .star8_2{
   top: 355px;
   left: 156px;
-  /*transform: rotate(5deg);*/
 }
 .star9_1{
   top: 343px;
   left: 66px;
-  /*z-index: 2;*/
 }  
 .star9_2{
   top: 343px;
   left: 66px;
-  /*transform: rotate(5deg);*/
 }
 /*.shootingStar{
   top: 379px;
@@ -249,25 +241,21 @@ body{
   top: 75px;
   left: -150px;
   z-index: 3;
-  /*transform: rotate(5deg);*/
 }
 .cloud_medium{
   top: 53px;
   left: 200px;
   z-index: 3;
-  /*transform: rotate(5deg);*/
 }
 .cloud_small{
   top: 70px;
-  left: 0px;
+  left: 0;
   z-index: 3;
-  /*transform: rotate(5deg);*/
 }
 .cloud_micro{
   top: 100px;
   left: 10px;
   z-index: 3;
-  /*transform: rotate(5deg);*/
 }
 .moon{
   top: 390px;
@@ -287,8 +275,125 @@ body{
 
 
 
+/* ---------- ZODIAC SIGNS ---------- */
 
 
+
+#zodiacSigns{
+  position: absolute;
+  z-index: 2;
+}
+#zodiacSigns > * {
+  position: absolute;
+  z-index: 3;
+  /*list-style: none;*/
+}
+#zodiacSigns > img{
+  z-index: 3;
+  /*background-repeat: no-repeat;*/
+}
+#Aquarius{
+  top: 417px;
+  left: 290px;
+  /*z-index: 10;*/
+}
+#Pisces{
+  top: 414px;
+  left: 289px;
+  /*z-index: 10;*/
+}
+#Aries{
+  top: 416px;
+  left: 285px;
+  /*z-index: 10;*/
+}
+#Taurus{
+  top: 419px;
+  left: 281px;
+  /*z-index: 10;*/
+}
+#Gemini{
+  top: 417px;
+  left: 278px;
+  /*z-index: 10;*/
+}
+#Cancer{
+  top: 414px;
+  left: 285px;
+  /*z-index: 10;*/
+  transform: rotate(11deg);
+}
+#Leo{
+  top: 415px;
+  left: 285px;
+  /*z-index: 10;*/
+}
+#Virgo{
+  top: 414px;
+  left: 285px;
+  /*z-index: 10;*/
+}
+#Libra{
+  top: 414px;
+  left: 283px;
+  /*z-index: 10;*/
+}
+#Scorpio{
+  top: 414px;
+  left: 289px;
+  /*z-index: 10;*/
+  transform: rotate(11deg);
+}
+#Sagittarius{
+  top: 416px;
+  left: 280px;
+  /*z-index: 10;*/
+}
+#Capricorn{
+  top: 416px;
+  left: 288px;
+  z-index: 3;
+}
+
+
+
+/* ---------- Months ---------- */
+
+
+
+
+#monthDate{
+  position: absolute;
+}
+#Jan{
+  position: absolute;
+  top: 437px;
+  left: 514px;
+  z-index: 10;
+}
+
+
+
+/* ---------- Dates ---------- */
+
+
+
+
+#numberDate{
+  position: absolute;
+}
+#zero{
+  position: absolute;
+  top: 438px;
+  left: 584px;
+  z-index: 10;
+}
+#one{
+  position: absolute;
+  top: 438px;
+  left: 623px;
+  z-index: 10;
+}
 
 
 
