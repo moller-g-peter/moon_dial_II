@@ -138,6 +138,7 @@ body{
   background: url(../img/gradient_circle_celest.png);
   background-repeat: no-repeat;
   z-index: -1;
+  transform: rotate(25deg);
 }
 #gradientDisc * {
   position: absolute;
