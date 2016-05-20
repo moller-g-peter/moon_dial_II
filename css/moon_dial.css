@@ -24,8 +24,6 @@ body{
   background-repeat: no-repeat;
   padding: 0;
   margin: 0;
-  /*z-index: 1;*/
-  /*overflow: hidden;*/
 }
 #sec, #min, #hour {
   position: absolute;
@@ -134,14 +132,14 @@ body{
   left: 204px;
   width: 484px;
   height: 484px;
-  /*margin: 20px auto 0 auto;*/
   background: url(../img/gradient_circle_celest.png);
   background-repeat: no-repeat;
   z-index: -1;
-  transform: rotate(25deg);
+  /*transform: rotate(25deg);*/
 }
 #gradientDisc * {
   position: absolute;
+/*transform: rotate(25deg);*/
 }
 .sunY_low{
   top: 45px;
@@ -165,7 +163,7 @@ body{
 .star2_1{
   top: 428px;
   left: 166px;
-}  
+}
 .star2_2{
   top: 427px;
   left: 167px;
@@ -287,68 +285,55 @@ body{
 #zodiacSigns > * {
   position: absolute;
   z-index: 3;
-  /*list-style: none;*/
 }
 #zodiacSigns > img{
   z-index: 3;
-  /*background-repeat: no-repeat;*/
 }
 #Aquarius{
   top: 417px;
   left: 290px;
-  /*z-index: 10;*/
 }
 #Pisces{
   top: 414px;
   left: 289px;
-  /*z-index: 10;*/
 }
 #Aries{
   top: 416px;
   left: 285px;
-  /*z-index: 10;*/
 }
 #Taurus{
   top: 419px;
   left: 281px;
-  /*z-index: 10;*/
 }
 #Gemini{
   top: 417px;
   left: 278px;
-  /*z-index: 10;*/
 }
 #Cancer{
   top: 414px;
   left: 285px;
-  /*z-index: 10;*/
   transform: rotate(11deg);
 }
 #Leo{
   top: 415px;
   left: 285px;
-  /*z-index: 10;*/
 }
 #Virgo{
   top: 414px;
   left: 285px;
-  /*z-index: 10;*/
 }
 #Libra{
   top: 414px;
   left: 283px;
-  /*z-index: 10;*/
 }
 #Scorpio{
   top: 414px;
   left: 289px;
-  /*z-index: 10;*/
   transform: rotate(11deg);
 }
 #Sagittarius{
   top: 416px;
   left: 280px;
-  /*z-index: 10;*/
 }
 #Capricorn{
   top: 416px;
@@ -451,39 +436,6 @@ body{
 /*.starBox{
   position: relative;
 }*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
