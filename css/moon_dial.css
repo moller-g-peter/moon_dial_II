@@ -292,53 +292,65 @@ body{
 #Aquarius{
   top: 417px;
   left: 290px;
+  height: 57px;
 }
 #Pisces{
-  top: 414px;
-  left: 289px;
+  top: 416px;
+  left: 290px;
+  height: 59px;
 }
 #Aries{
   top: 416px;
   left: 285px;
+  height: 57px;
 }
 #Taurus{
-  top: 419px;
+  top: 417px;
   left: 281px;
+  height: 57px;
 }
 #Gemini{
-  top: 417px;
-  left: 278px;
+  top: 418px;
+  left: 280px;
+  height: 52px;
 }
 #Cancer{
   top: 414px;
   left: 285px;
+  height: 59px;
   transform: rotate(11deg);
 }
 #Leo{
   top: 415px;
   left: 285px;
+  height: 59px;
 }
 #Virgo{
-  top: 414px;
-  left: 285px;
+  top: 416px;
+  left: 288px;
+  height: 59px;
 }
 #Libra{
-  top: 414px;
-  left: 283px;
+  top: 416px;
+  left: 284px;
+  height: 57px;
 }
 #Scorpio{
-  top: 414px;
-  left: 289px;
+  top: 415px;
+  left: 291px;
+  height: 59px;
   transform: rotate(11deg);
 }
 #Sagittarius{
-  top: 416px;
-  left: 280px;
+  top: 417px;
+  left: 281px;
+  height: 57px;
 }
 #Capricorn{
   top: 416px;
   left: 288px;
-  z-index: 3;
+  height: 57px;
+  /*z-index: 3;*/
 }
 
 
@@ -380,7 +392,6 @@ body{
   left: 623px;
   z-index: 10;
 }
-
 
 
 /*

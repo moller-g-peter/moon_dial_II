@@ -3,6 +3,8 @@ var month = new Date().getMonth() + 1;
 
 console.log(date);
 
+$('#zodiacSigns').append('<img id="Virgo" src="img/Zodiac_Virgo.png" />');
+
 if((month == 1 && date <= 20) || (month == 12 && date >=22)) {
     // return zodiacSigns.capricorn;
     console.log("capricorn");
@@ -21,6 +23,7 @@ if((month == 1 && date <= 20) || (month == 12 && date >=22)) {
   } else if((month == 5 && date >= 21) || (month == 6 && date <= 20)) {
     // return zodiacSigns.gemini;
     console.log("gemini");
+    // $('#zodiacSigns').append('<img id="Gemini" src="img/Zodiac_Gemini.png" />');
   } else if((month == 6 && date >= 22) || (month == 7 && date <= 22)) {
     // return zodiacSigns.cancer;
     console.log("cancer");
