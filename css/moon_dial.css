@@ -360,13 +360,18 @@ body{
 
 
 
-#monthDate{
+#monthName{
   position: absolute;
 }
-#Jan{
+
+#Jan,#Feb,#Mar,
+#Apr,#May,#Jun,
+#Jul,#Aug,#Sep,
+#Oct,#Nov,#Dec{
   position: absolute;
   top: 437px;
   left: 514px;
+  width: 60px;
   z-index: 10;
 }
 
