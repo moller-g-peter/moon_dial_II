@@ -120,23 +120,6 @@ function sunY_low(){
     sunY_high();
   });
 }
-
-
-
-// function setCloudAnimation(cloudClass, animateTime){
-//   setInterval(function(){
-//     animateClouds(cloudClass, animateTime);
-//   }, animateTime);
-// }
-
-// function animateClouds(){
-//   var bigCloud = $('.' + cloudClass + '_big');
-//   var mediumCloud = $('.' + cloudClass + '_medium');
-//   var smallCloud = $('.' + cloudClass + '_small');
-//   var microCloud = $('.' + cloudClass + '_micro');
-// }
-
-
 function animatedCloudBig(){
   $(".cloud_big").animate({left: '500px'}, 27000, 'linear', function(){
     $('.cloud_big').css({left:-200});
@@ -164,34 +147,6 @@ function animatedCloudMicro(){
 
  
 // -----------------------------------------------
-
-var Aquarius = [];
-var Pisces;
-var Aries;
-var Taurus;
-var Gemini;
-var Cancer;
-var Leo;
-var Virgo;
-var Libra;
-var Scorpio;
-var Sagittarius;
-var Capricorn;
-
-
-
-var date = new Date().getDate();
-var month = new Date().getMonth() + 1;
-console.log(date);
-console.log(month);
-
-
-// if (true) {
-
-// } else if {
-
-// };
-
 
 
 
