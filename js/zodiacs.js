@@ -69,7 +69,17 @@ if((month == 1 && date <= 20) || (month == 12 && date >=22)) {
   }
 
 
+// console.log("sdfsdf");
+if (date > 0 && date < 10) {
+  console.log("sdfs");
+} else if
+(date > 11 && date < 31) {
+  console.log("iuoiu");
+  
+  // $('#numbers').append('<img id="zero" src="img/Date_0.png" />');
+} else{
 
+}
 
 
 
