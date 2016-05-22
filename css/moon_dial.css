@@ -369,7 +369,7 @@ body{
 #Jul,#Aug,#Sep,
 #Oct,#Nov,#Dec{
   position: absolute;
-  top: 437px;
+  top: 439px;
   left: 514px;
   width: 60px;
   z-index: 10;
@@ -380,22 +380,24 @@ body{
 /* ---------- Dates ---------- */
 
 
-
-
-#numbers{
+/*#numbersLeft,
+#numbersRight{
   position: absolute;
-}
-#zero{
+}*/
+#numbersLeft,
+#numbersLeft > * {
   position: absolute;
-  top: 438px;
-  left: 584px;
-  height: 20px;
+  top: 218px;
+  left: 291px;
+  height: 25px;
   z-index: 10;
 }
-#one{
+#numbersRight,
+#numbersRight > * {
   position: absolute;
-  top: 438px;
-  left: 623px;
+  top: 218px;
+  left: 308px;
+  height: 25px;
   z-index: 10;
 }
 

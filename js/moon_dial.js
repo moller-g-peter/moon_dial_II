@@ -23,7 +23,9 @@ setInterval( function() {
 
 
 // equation for the disc (halfspeed)
-  var halfDegree = hours * 30 + (mins / 2) / 2;
+  var halfDegree = hdegree / 2;
+  // console.log("hdegree: ", hdegree);
+  // console.log("halfDegree: ", halfDegree);
   var halfRotate = "rotate(" + halfDegree + "deg)";
   $("#gradientDisc").css({ "transform": halfRotate });
   // console.log("halfDegree :", halfDegree);

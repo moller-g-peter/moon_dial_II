@@ -70,25 +70,125 @@ if((month == 1 && date <= 20) || (month == 12 && date >=22)) {
 
 
 
+// for (var i = 0; i < num2str.length; i++) {
+//   console.log("sdfsdf",num2str[i]);
+// }
 
 
 
 
 
-
-// console.log("sdfsdf");
+console.log("num2str: ", num2str);
 if (num2str > 0 && num2str < 10) {
-  console.log("sdfs");
-} else if
-(num2str > 11 && num2str < 31) {
-  console.log(date);
-  console.log(num2str);
+  // console.log("sdfs");
+  $('#numbersLeft').append('<img id="zero" src="img/Date_0.png" />');
+  if (num2str == 1) {
+    $('#numbersRight').append('<img id="one" src="img/Date_1.png" />');
+  } else if (num2str == 2){
+    $('#numbersRight').append('<img id="two" src="img/Date_2.png" />');
+  } else if (num2str == 3){
+    $('#numbersRight').append('<img id="three" src="img/Date_3.png" />');
+  } else if (num2str == 4){
+    $('#numbersRight').append('<img id="four" src="img/Date_4.png" />');
+  } else if (num2str == 5){
+    $('#numbersRight').append('<img id="five" src="img/Date_5.png" />');
+  } else if (num2str == 6){
+    $('#numbersRight').append('<img id="six" src="img/Date_6.png" />');
+  } else if (num2str == 7){
+    $('#numbersRight').append('<img id="seven" src="img/Date_7.png" />');
+  } else if (num2str == 8){
+    $('#numbersRight').append('<img id="eight" src="img/Date_8.png" />');
+  } else if (num2str == 9){
+    $('#numbersRight').append('<img id="nine" src="img/Date_9.png" />');
+  }
+} else if (num2str == 10){
+  $('#numbersLeft').append('<img id="one" src="img/Date_1.png" />');
+  $('#numbersRight').append('<img id="zero" src="img/Date_0.png" />');
 
-  $('#numbers').append('<img id="zero" src="img/Date_0.png" />');
-} else{
+} else if (num2str == 11){
+  $('#numbersLeft').append('<img id="one" src="img/Date_1.png" />');
+  $('#numbersRight').append('<img id="one" src="img/Date_1.png" />');
 
+} else if (num2str == 12){
+  $('#numbersLeft').append('<img id="one" src="img/Date_1.png" />');
+  $('#numbersRight').append('<img id="two" src="img/Date_2.png" />');
+
+} else if (num2str == 13){
+  $('#numbersLeft').append('<img id="one" src="img/Date_1.png" />');
+  $('#numbersRight').append('<img id="three" src="img/Date_3.png" />');
+
+} else if (num2str == 14){
+  $('#numbersLeft').append('<img id="one" src="img/Date_1.png" />');
+  $('#numbersRight').append('<img id="four" src="img/Date_4.png" />');
+
+} else if (num2str == 15){
+  $('#numbersLeft').append('<img id="one" src="img/Date_1.png" />');
+  $('#numbersRight').append('<img id="five" src="img/Date_5.png" />');
+
+} else if (num2str == 16){
+  $('#numbersLeft').append('<img id="one" src="img/Date_1.png" />');
+  $('#numbersRight').append('<img id="six" src="img/Date_6.png" />');
+
+} else if (num2str == 17){
+  $('#numbersLeft').append('<img id="one" src="img/Date_1.png" />');
+  $('#numbersRight').append('<img id="seven" src="img/Date_7.png" />');
+
+} else if (num2str == 18){
+  $('#numbersLeft').append('<img id="one" src="img/Date_1.png" />');
+  $('#numbersRight').append('<img id="eight" src="img/Date_8.png" />');
+
+} else if (num2str == 19){
+  $('#numbersLeft').append('<img id="one" src="img/Date_1.png" />');
+  $('#numbersRight').append('<img id="nine" src="img/Date_9.png" />');
+
+} else if (num2str == 20){
+  $('#numbersLeft').append('<img id="two" src="img/Date_2.png" />');
+  $('#numbersRight').append('<img id="zero" src="img/Date_0.png" />');
+
+} else if (num2str == 21){
+  $('#numbersLeft').append('<img id="two" src="img/Date_2.png" />');
+  $('#numbersRight').append('<img id="one" src="img/Date_1.png" />');
+
+} else if (num2str == 22){
+  $('#numbersLeft').append('<img id="two" src="img/Date_2.png" />');
+  $('#numbersRight').append('<img id="two" src="img/Date_2.png" />');
+
+} else if (num2str == 23){
+  $('#numbersLeft').append('<img id="two" src="img/Date_2.png" />');
+  $('#numbersRight').append('<img id="three" src="img/Date_3.png" />');
+
+} else if (num2str == 24){
+  $('#numbersLeft').append('<img id="two" src="img/Date_2.png" />');
+  $('#numbersRight').append('<img id="four" src="img/Date_4.png" />');
+
+} else if (num2str == 25){
+  $('#numbersLeft').append('<img id="two" src="img/Date_2.png" />');
+  $('#numbersRight').append('<img id="five" src="img/Date_5.png" />');
+
+} else if (num2str == 26){
+  $('#numbersLeft').append('<img id="two" src="img/Date_2.png" />');
+  $('#numbersRight').append('<img id="six" src="img/Date_6.png" />');
+
+} else if (num2str == 27){
+  $('#numbersLeft').append('<img id="two" src="img/Date_2.png" />');
+  $('#numbersRight').append('<img id="seven" src="img/Date_7.png" />');
+
+} else if (num2str == 28){
+  $('#numbersLeft').append('<img id="two" src="img/Date_2.png" />');
+  $('#numbersRight').append('<img id="eight" src="img/Date_8.png" />');
+
+} else if (num2str == 29){
+  $('#numbersLeft').append('<img id="two" src="img/Date_2.png" />');
+  $('#numbersRight').append('<img id="nine" src="img/Date_9.png" />');
+
+} else if (num2str == 30){
+  $('#numbersLeft').append('<img id="three" src="img/Date_3.png" />');
+  $('#numbersRight').append('<img id="zero" src="img/Date_0.png" />');
+
+} else if (num2str == 31){
+  $('#numbersLeft').append('<img id="three" src="img/Date_3.png" />');
+  $('#numbersRight').append('<img id="one" src="img/Date_1.png" />');
 }
-
 
 
 
