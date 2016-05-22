@@ -382,13 +382,14 @@ body{
 
 
 
-#numberDate{
+#numbers{
   position: absolute;
 }
 #zero{
   position: absolute;
   top: 438px;
   left: 584px;
+  height: 20px;
   z-index: 10;
 }
 #one{

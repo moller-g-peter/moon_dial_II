@@ -1,6 +1,6 @@
 var date = new Date().getDate();
 var month = new Date().getMonth() + 1;
-
+var num2str = date.toString();
 // console.log(month);
 
 if((month == 1 && date <= 20) || (month == 12 && date >=22)) {
@@ -69,14 +69,22 @@ if((month == 1 && date <= 20) || (month == 12 && date >=22)) {
   }
 
 
+
+
+
+
+
+
+
 // console.log("sdfsdf");
-if (date > 0 && date < 10) {
+if (num2str > 0 && num2str < 10) {
   console.log("sdfs");
 } else if
-(date > 11 && date < 31) {
-  console.log("iuoiu");
-  
-  // $('#numbers').append('<img id="zero" src="img/Date_0.png" />');
+(num2str > 11 && num2str < 31) {
+  console.log(date);
+  console.log(num2str);
+
+  $('#numbers').append('<img id="zero" src="img/Date_0.png" />');
 } else{
 
 }
