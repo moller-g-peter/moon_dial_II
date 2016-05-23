@@ -1,7 +1,6 @@
 
 $('.sunY_high').hide();
-
-
+$('gradientDisc').animate('rotate', '30deg');
 
 setInterval( function() {
   var seconds = new Date().getSeconds();
@@ -27,6 +26,7 @@ setInterval( function() {
   // console.log("hdegree: ", hdegree);
   // console.log("halfDegree: ", halfDegree);
   var halfRotate = "rotate(" + halfDegree + "deg)";
+
   $("#gradientDisc").css({ "transform": halfRotate });
   // console.log("halfDegree :", halfDegree);
   // console.log("halfRotate :", halfRotate);
@@ -61,12 +61,8 @@ setInterval( function() {
 setInterval( function() {
   var mins = new Date().getMinutes();
   var mdegree = mins * 6;
-  var mrotate = "rotate(" + mdegree + "deg)";
 
-   // remove string from 'mrotate' and keep the integer
-  var number = mrotate.replace(/[^0-9]/g, '');
-
-  if (number >= 120 && number <= 270){
+  if (mdegree >= 120 && mdegree <= 270){
     $(".shootingStar").animate({left: '-100', top: '140'}, 700, 'linear', function(){
       $('.shootingStar').css({left:467, top:437});
     });
@@ -79,19 +75,15 @@ setInterval( function() {
 
 function setStarTwinkleInterval (starClass, fadeTime) {
   setInterval( function () {
-    // console.log('it works');
     twinkleStar(starClass, fadeTime);
   }, fadeTime);
 }
 
 function twinkleStar(starClass, fadeTime) {
   // console.log(starClass, fadeTime);
-  // console.log('it works');
+
   var starPart1 = $('.' + starClass + '_1');
   var starPart2 = $('.' + starClass + '_2');
-
-  // console.log(starPart1.css('z-index'));
-  // console.log(starPart2.css('z-index'));
 
   if (starPart1.css('z-index') == 1) {
     starPart1.css('z-index', '2').fadeOut(fadeTime);
@@ -105,7 +97,6 @@ function twinkleStar(starClass, fadeTime) {
     starPart1.css('z-index', '2').fadeOut(fadeTime);
     starPart2.css('z-index', '1').fadeIn(fadeTime);
   }
-  // console.log('fart');
 }
 
 // ------------------------------------------
@@ -152,11 +143,13 @@ function animatedCloudMicro(){
 
 
 
-// window.requestAnimationFrame = window.requestAnimationFrame
-//                                || window.mozRequestAnimationFrame
-//                                || window.webkitRequestAnimationFrame
-//                                || window.msRequestAnimationFrame
-//                                || function(f){return setTimeout(f, 1000/60)};
+// window.requestAnimationFrame =
+// window.requestAnimationFrame||
+// window.mozRequestAnimationFrame||
+// window.webkitRequestAnimationFrame||
+// window.msRequestAnimationFrame||
+// function(f){return setTimeout(f, 1000/60)};
+
 
 // function updateclock(){
 //  // var curdate = new Date();
@@ -187,12 +180,6 @@ setStarTwinkleInterval('star7', 1800);
 // setStarTwinkleInterval('star8', 1400);
 setStarTwinkleInterval('star9', 1400);
 
-
-
-// setCloudAnimation('.cloud_big', 27000);
-// setCloudAnimation('.cloud_medium', 35000);
-// setCloudAnimation('.cloud_small', 50000);
-// setCloudAnimation('.cloud_micro', 70000);
 
 
 
