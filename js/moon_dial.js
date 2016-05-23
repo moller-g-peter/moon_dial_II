@@ -2,58 +2,58 @@
 $('.sunY_high').hide();
 $('gradientDisc').animate('rotate', '180deg');
 
-setInterval( function() {
-  var seconds = new Date().getSeconds();
-  var sdegree = seconds * 6;
-  var srotate = "rotate(" + sdegree + "deg)";
-  // console.log("srotate :", srotate);
-  $("#sec").css({ "transform": srotate });
+// setInterval( function() {
+//   var seconds = new Date().getSeconds();
+//   var sdegree = seconds * 6;
+//   var srotate = "rotate(" + sdegree + "deg)";
+//   // console.log("srotate :", srotate);
+//   $("#sec").css({ "transform": srotate });
 
-}, 1000 );
+// }, 1000 );
 // -----------------------------------------------
 
 
 
-setInterval( function() {
-  var hours = new Date().getHours();
-  var mins = new Date().getMinutes();
-  var hdegree = hours * 30 + (mins / 2);
-  var hrotate = "rotate(" + hdegree + "deg)";
+// setInterval( function() {
+//   var hours = new Date().getHours();
+//   var mins = new Date().getMinutes();
+//   var hdegree = hours * 30 + (mins / 2);
+//   var hrotate = "rotate(" + hdegree + "deg)";
 
 
-// equation for the disc (halfspeed)
-  var halfDegree = hdegree / 2;
-  // console.log("hdegree: ", hdegree);
-  // console.log("halfDegree: ", halfDegree);
-  var halfRotate = "rotate(" + halfDegree + "deg)";
+// // equation for the disc (halfspeed)
+//   var halfDegree = hdegree / 2;
+//   // console.log("hdegree: ", hdegree);
+//   // console.log("halfDegree: ", halfDegree);
+//   var halfRotate = "rotate(" + halfDegree + "deg)";
 
-  $("#gradientDisc").css({ "transform": halfRotate });
-  // console.log("halfDegree :", halfDegree);
-  // console.log("halfRotate :", halfRotate);
-  // console.log("hrotate :", hrotate);
+//   $("#gradientDisc").css({ "transform": halfRotate });
+//   // console.log("halfDegree :", halfDegree);
+//   // console.log("halfRotate :", halfRotate);
+//   // console.log("hrotate :", hrotate);
 
 
-  $("#hour").css({ "transform": hrotate});
+//   $("#hour").css({ "transform": hrotate});
     
-}, 1000 );
+// }, 1000 );
 // -----------------------------------------------
 
 
 
-setInterval( function() {
-  var mins = new Date().getMinutes();
-  var mdegree = mins * 6;
-  var mrotate = "rotate(" + mdegree + "deg)";
+// setInterval( function() {
+//   var mins = new Date().getMinutes();
+//   var mdegree = mins * 6;
+//   var mrotate = "rotate(" + mdegree + "deg)";
 
-// equation for the disc (halfspeed)
-  // var halfDegree = mins * 12 / 2;
-  // var halfRotate = "rotate(" + halfDegree + "deg)";
+// // equation for the disc (halfspeed)
+//   // var halfDegree = mins * 12 / 2;
+//   // var halfRotate = "rotate(" + halfDegree + "deg)";
 
-  $("#min").css({ "transform" : mrotate });
-  // $("#gradientDisc").css({ "transform": halfRotate });
-  // console.log('number :', number);
+//   $("#min").css({ "transform" : mrotate });
+//   // $("#gradientDisc").css({ "transform": halfRotate });
+//   // console.log('number :', number);
 
-}, 1000 );
+// }, 1000 );
 // -----------------------------------------------
 
 
@@ -143,28 +143,29 @@ function animatedCloudMicro(){
 
 
 
-// window.requestAnimationFrame =
-// window.requestAnimationFrame||
-// window.mozRequestAnimationFrame||
-// window.webkitRequestAnimationFrame||
-// window.msRequestAnimationFrame||
-// function(f){return setTimeout(f, 1000/60)};
+window.requestAnimationFrame =
+window.requestAnimationFrame||
+window.mozRequestAnimationFrame||
+window.webkitRequestAnimationFrame||
+window.msRequestAnimationFrame||
+function(f){return setTimeout(f, 1000/60)};
 
 
-// function updateclock(){
-//  // var curdate = new Date();
-//  var hour_as_degree = ( new Date().getHours() + new Date().getMinutes()/60 ) / 12 * 360;
-//  var minute_as_degree = ( new Date().getMinutes() + new Date().getSeconds()/60 ) / 60 * 360;
-//  var second_as_degree = ( new Date().getSeconds() + new Date().getMilliseconds()/1000 ) /60 * 360;
-//  $('#hour').css({transform: 'rotate(' + hour_as_degree + 'deg)' });
-//  $('#min').css({transform: 'rotate(' + minute_as_degree + 'deg)' });
-//  $('#gradientDisc').css({transform: 'rotate(' + hour_as_degree + 'deg)' });
-//  $('#sec').css({transform: 'rotate(' + second_as_degree + 'deg)' });
-//  // console.log(second_as_degree);
-//  requestAnimationFrame(updateclock); //
-// }
+function updateclock(){
+ // var curdate = new Date();
+ var hdegree = ( new Date().getHours() + new Date().getMinutes()/60 ) / 12 * 360;
+ var mdegree = ( new Date().getMinutes() + new Date().getSeconds()/60 ) / 60 * 360;
+ var sdegree = ( new Date().getSeconds() + new Date().getMilliseconds()/1000 ) /60 * 360;
+ var halfDegree = sdegree /2;
+ $('#hour').css({transform: 'rotate(' + hdegree + 'deg)' });
+ $('#min').css({transform: 'rotate(' + mdegree + 'deg)' });
+ $('#gradientDisc').css({transform: 'rotate(' + halfDegree + 'deg)' });
+ $('#sec').css({transform: 'rotate(' + sdegree + 'deg)' });
+ // console.log(second_as_degree);
+ requestAnimationFrame(updateclock); //
+}
 
-// requestAnimationFrame(updateclock);
+requestAnimationFrame(updateclock);
 
 
 
