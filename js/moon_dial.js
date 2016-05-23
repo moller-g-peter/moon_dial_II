@@ -1,6 +1,6 @@
 
 $('.sunY_high').hide();
-$('gradientDisc').animate('rotate', '30deg');
+$('gradientDisc').animate('rotate', '180deg');
 
 setInterval( function() {
   var seconds = new Date().getSeconds();
