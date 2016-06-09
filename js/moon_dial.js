@@ -157,6 +157,7 @@ function updateclock(){
  var mdegree = ( new Date().getMinutes() + new Date().getSeconds()/60 ) / 60 * 360;
  var sdegree = ( new Date().getSeconds() + new Date().getMilliseconds()/1000 ) /60 * 360;
  var halfDegree = sdegree /2;
+ // need to add a counter to go pass 359 degrees
  $('#hour').css({transform: 'rotate(' + hdegree + 'deg)' });
  $('#min').css({transform: 'rotate(' + mdegree + 'deg)' });
  $('#gradientDisc').css({transform: 'rotate(' + halfDegree + 'deg)' });
